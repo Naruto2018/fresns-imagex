@@ -120,7 +120,7 @@ class WebController extends Controller
             'imagexClientAppId',
             'imagexServiceId',
             'uploadSessionId',
-        ));
+        ))->header('Cache-Control', 'no-cache');
     }
 
 }
